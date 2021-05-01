@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var userNumber = +prompt('Введите число');
+		var str = '';
+		if (userNumber !== userNumber || userNumber === 0) {
+			alert('Вы ввели некорректное значение')
+		} else {
+			for (var i = 1; i <= userNumber; i++) {
+				for (var a = i; a <= userNumber-1; a++) {
+					str += ' ';
+				}
+				for (var b = 1; b <= 2*i-1; b++) {
+					str += '*';
+				}
+				str += '\n';
+			}
+			alert(str);
+			console.log(str); // в консоли как-то красивее выглядит
+		} 
+	</script>
+</body>
+</html>
